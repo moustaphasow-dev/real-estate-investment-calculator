@@ -1,4 +1,4 @@
-p = {"purchase_price": 210000,
+sample_property = {"purchase_price": 210000,
      "estimated_rent": 1900,
      "property_taxes": 2400,
      "insurance": 1500,
@@ -56,14 +56,18 @@ def real_analysis(p):
 
 
 noi, annual_cashflow, cap_rate, coc_roi, dscr = real_analysis(
-    p)
+    sample_property)
 
 print()
 print("==== DEAL REPORT ====")
-print(f"The annual cash flow for this property is ${annual_cashflow:.2f}")
-print(f"The cap rate on this property is {cap_rate:.1f}")
-print(f"The cash roi on this property is {coc_roi:.1f}")
-print(f"The dscr on this property is {dscr:.1f}")
+print()
+if annual_cashflow < 0:
+    print(f"Annual cash flow: -${abs(annual_cashflow):.2f}")
+else:
+    print(f"Annual cash flow: ${annual_cashflow:.2f}")
+print(f"Cap rate: {cap_rate:.1f}%")
+print(f"CoC return: {coc_roi:.1f}%")
+print(f"DSCR: {dscr:.1f}")
 print()
 print("==== IS PROPERTY A YES OR NO? ====")
 if coc_roi >= 12 and dscr >= 1.2 and cap_rate >= 7:
