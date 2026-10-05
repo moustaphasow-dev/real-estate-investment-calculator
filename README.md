@@ -56,7 +56,7 @@ NO
 4. Run:
 
 ```bash
-python3 Calculator.py
+python3 real_estate_calculator.py
 ```
 
 ## Deal Criteria
