@@ -61,6 +61,7 @@ noi, annual_cashflow, cap_rate, coc_roi, dscr = real_analysis(
 print()
 print("==== DEAL REPORT ====")
 print()
+print(f"NOI: ${noi:,.2f}")
 if annual_cashflow < 0:
     print(f"Annual cash flow: -${abs(annual_cashflow):.2f}")
 else:
