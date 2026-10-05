@@ -16,6 +16,7 @@ A Python project that analyzes rental property deals using common real estate in
 ```text
 ==== DEAL REPORT ====
 
+NOI: $12,415.68
 Annual cash flow: -$799.47
 Cap rate: 5.9%
 CoC return: -1.4%
