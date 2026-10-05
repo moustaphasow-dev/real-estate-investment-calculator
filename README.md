@@ -21,7 +21,7 @@ Cap rate: 5.9%
 CoC return: -1.4%
 DSCR: 0.9
 
-==== DEAL DECISION ====
+==== IS PROPERTY A YES OR NO? ====
 NO
 ```
 
@@ -46,3 +46,22 @@ NO
 - Add more real estate investment metrics
 - Add input validation and error handling
 - Build a graphical or web interface
+
+## How to Run
+
+1. Make sure Python 3 is installed.
+2. Clone this repository.
+3. Open the project folder in a terminal.
+4. Run:
+
+```bash
+python3 Calculator.py
+```
+
+## Deal Criteria
+
+The calculator currently marks a property as a YES when all of the following conditions are met:
+
+- Cash-on-cash return is at least 12%
+- DSCR is at least 1.2
+- Cap rate is at least 7%
